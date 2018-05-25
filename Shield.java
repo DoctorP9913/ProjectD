@@ -18,9 +18,14 @@ class Shield {
     ImageIcon shield;
     
     //dem shields
-    static Shield Shield1 = new Shield("Asscover", 13,new ImageIcon("./src/ImageLibrary/Sword_Default.png"));
-    static Shield Shield2 = new Shield("Rondover", 16,new ImageIcon("./src/ImageLibrary/Sword_Default.png"));
-    static Shield Shield3 = new Shield("Hand", 1,new ImageIcon("./src/ImageLibrary/Sword_Default.png"));
+    static Shield Shield1 = new Shield("Anti-Shield", 13,new ImageIcon("./src/projectd/Image_Library/Shields/Anti_Shield.png"));
+    static Shield Shield2 = new Shield("Rondover", 12,new ImageIcon("./src/projectd/Image_Library/Shields/RoundLove_Shield.png"));
+    static Shield Shield3 = new Shield("Fab Shield", 14,new ImageIcon("./src/projectd/Image_Library/Shields/Fab_Shield.png"));
+    static Shield Shield4 = new Shield("Heal Shield", 13,new ImageIcon("./src/projectd/Image_Library/Shields/Heal_Shield.png"));
+    static Shield Shield5 = new Shield("Knight Shield", 17,new ImageIcon("./src/projectd/Image_Library/Shields/Knight_Shield.png"));
+    static Shield Shield6 = new Shield("PureSteel Shield", 15,new ImageIcon("./src/projectd/Image_Library/Shields/PureSteel_Armor.png"));
+    static Shield Shield7 = new Shield("Software Shield", 12,new ImageIcon("./src/projectd/Image_Library/Shields/Software_Shield.png"));
+    static Shield Shield8 = new Shield("Steel Shield", 16,new ImageIcon("./src/projectd/Image_Library/Shields/Steel_Shield.png"));
     
     Shield(String name, int armor, ImageIcon shield){
         this.name = name;
@@ -30,7 +35,7 @@ class Shield {
     
     public static Shield rng_Shield(){
         Random rnd = new Random();
-        int rn_s = rnd.nextInt(2) + 1;
+        int rn_s = rnd.nextInt(7) + 1;
         switch(rn_s) {
             case 1:
                 return Shield1;
@@ -38,6 +43,16 @@ class Shield {
                 return Shield2;
             case 3:
                 return Shield3;
+            case 4:
+                return Shield4;
+            case 5:
+                return Shield5;
+            case 6:
+                return Shield6;
+            case 7:
+                return Shield7;
+            case 8:
+                return Shield8;
             default:
                 return Shield1;
         }

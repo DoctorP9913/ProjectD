@@ -3,11 +3,15 @@
 <Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -34,6 +38,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel1" min="-2" pref="166" max="-2" attributes="1"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
@@ -53,29 +58,42 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jPanel1" min="-2" max="-2" attributes="1"/>
                       </Group>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
-                      <Component id="Room_num" min="-2" pref="56" max="-2" attributes="1"/>
-                      <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Enemy_Health" alignment="0" max="32767" attributes="1"/>
-                          <Component id="Slot_Enemy" alignment="0" pref="212" max="32767" attributes="1"/>
-                          <Component id="Enemy_HealthBar" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
-                      <Component id="Drop" min="-2" pref="79" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="test_drop" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                      <Component id="Room_num" min="-2" pref="56" max="-2" attributes="1"/>
+                                  </Group>
+                                  <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="Enemy_Health" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="Slot_Enemy" alignment="0" pref="212" max="32767" attributes="1"/>
+                                  <Component id="Enemy_HealthBar" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="Drop" min="-2" pref="79" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="test_drop" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="59" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="LB_Version" min="-2" pref="119" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="69" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -105,48 +123,51 @@
                           <Component id="Health_Bar" min="-2" max="-2" attributes="0"/>
                           <Component id="Enemy_HealthBar" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="Slot_Player" alignment="0" max="32767" attributes="1"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Slot_Weapon" min="-2" pref="62" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Slot_Shield" min="-2" pref="62" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Slot_Helmet" min="-2" pref="62" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Slot_Armor" min="-2" pref="62" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="Slot_Enemy" max="32767" attributes="1"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="Room_num" min="-2" pref="26" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="312" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="Room_num" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="XP_Bar" min="-2" max="-2" attributes="0"/>
-                          <Component id="LB_Stats" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="Drop" min="-2" pref="79" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Slot_Player" alignment="0" max="32767" attributes="1"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Slot_Weapon" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Slot_Shield" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Slot_Helmet" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Slot_Armor" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="Slot_Enemy" alignment="1" pref="274" max="32767" attributes="1"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       <Component id="test_drop" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="60" max="32767" attributes="0"/>
+                      <Component id="LB_Version" min="-2" pref="16" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="Drop" min="-2" pref="79" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="XP_Bar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LB_Stats" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -246,6 +267,9 @@
             <BevelBorder bevelType="1"/>
           </Border>
         </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[138, 105]"/>
+        </Property>
       </Properties>
 
       <Layout>
@@ -253,21 +277,25 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="LB_PlayerHealth" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="LB_PlayerDamage" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="LB_SwordDamage" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="LB_Armor" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Armor" pref="30" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="Max_Health" pref="30" max="32767" attributes="0"/>
-                          <Component id="Player_Damage" max="32767" attributes="0"/>
-                          <Component id="Sword_Damage" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="LB_PlayerHealth" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="LB_PlayerDamage" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Max_Health" pref="30" max="32767" attributes="0"/>
+                              <Component id="Player_Damage" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="LB_Armor" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="ArmorValue" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace pref="28" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -279,20 +307,15 @@
                       <Component id="Max_Health" max="32767" attributes="0"/>
                       <Component id="LB_PlayerHealth" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="LB_PlayerDamage" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Player_Damage" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="LB_SwordDamage" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Sword_Damage" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="LB_Armor" min="-2" max="-2" attributes="0"/>
-                      <Component id="Armor" min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="ArmorValue" min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -307,12 +330,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="LB_PlayerHealth">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Maximum Health:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="LB_SwordDamage">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Sword Damage:"/>
+            <Property name="text" type="java.lang.String" value="Max Health:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="LB_Armor">
@@ -324,13 +342,15 @@
         </Component>
         <Component class="javax.swing.JLabel" name="Player_Damage">
         </Component>
-        <Component class="javax.swing.JLabel" name="Sword_Damage">
-        </Component>
-        <Component class="javax.swing.JLabel" name="Armor">
+        <Component class="javax.swing.JLabel" name="ArmorValue">
         </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JProgressBar" name="XP_Bar">
+      <Properties>
+        <Property name="string" type="java.lang.String" value="XP"/>
+        <Property name="stringPainted" type="boolean" value="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JProgressBar" name="Health_Bar">
     </Component>
@@ -340,7 +360,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/projectd/Treasure-chest-free-to-use-clipart.png"/>
+          <Image iconType="3" name="/projectd/Image_Library/Treasure-chest-free-to-use-clipart.png"/>
         </Property>
       </Properties>
       <Events>
@@ -358,6 +378,22 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="test_dropActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LB_Version">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="LB_VersionFocusGained"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Start Game"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
