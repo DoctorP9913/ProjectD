@@ -35,7 +35,7 @@ class Shield {
     
     public static Shield rng_Shield(){
         Random rnd = new Random();
-        int rn_s = rnd.nextInt(7) + 1;
+        int rn_s = rnd.nextInt(8) + 1;
         switch(rn_s) {
             case 1:
                 return Shield1;
