@@ -18,7 +18,7 @@ class Armor {
     ImageIcon armor;
     
     //dem armors
-    static Armor Armor1 = new Armor("Wool Armor", 20, new ImageIcon(""));
+    static Armor Armor1 = new Armor("Crest Armor", 20, new ImageIcon("./src/projectd.Image_Library.Armor/Crest_Armor.png"));
     static Armor Armor2 = new Armor("Steel Armor",50, new ImageIcon(""));
     static Armor Armor3 = new Armor("Leather Armor", 25, new ImageIcon(""));
     
@@ -27,7 +27,6 @@ class Armor {
         this.armor_rating = armor_rating;
         this.armor = armor;
     }
-    
     public static Armor rng_Armor(){
         Random rnd = new Random();
         int rnd_a = rnd.nextInt(2) + 1;
