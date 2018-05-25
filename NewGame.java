@@ -12,22 +12,13 @@ package projectd;
 class NewGame {
     
     //de char variables
-    public static double Health;
-    public static double Max_Health=200;
-    public static double Health_regen=Max_Health*0.2;
-    public static int Damage;
-    public static int Experience;
-    public static int XP_Multi = 1;
-    public static int armor;
-    public static int gold_Multi = 1;
-    public static int gold;
-    public static int crit_chance;
-    public static int crit_damage_Multi = 2;
-    public static int Char_Level = 1;
-    public static int Room_Num = 1;
-    public static int Exp_Level = 500;
+    public double Health;
+    public double Max_Health;
+    public int Damage;
+    public int Experience;
+    public int armor;
+    public int Char_Level = 1;
+    public int Room_Num = 1;
+    public int Exp_Level = 500;
     public final int Exp_NextLevel = Exp_Level + (Exp_Level / 2);      //this shit might create logical bugs!
-    
-    
-    
 }
